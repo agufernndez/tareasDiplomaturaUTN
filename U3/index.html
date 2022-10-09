@@ -5,21 +5,29 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CV - Unidad III</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
     <main>
-        <h1>Agustina Fernandez</h1>
-        <h2>Desarrolladora Web Full Stack React Js.</h2>
-        <section>
-            <h3>Sobre Mí</h3>
+        <section class="section sectionTitulo">
+
+            <h1>Agustina Fernandez</h1>
+            <h2>Desarrolladora Web Full Stack React Js.</h2>
+        </section>
+            
+        <section class="section sectionSobreMi">
+            
+            <h3><i class="fa-solid fa-user"></i>Sobre Mí</h3>
             <p>Hola! Soy Agustina, me recibí en 2018 de Lic. en Kinesiología y Fisioterapia en el año 2018. Por diferentes circunstancias (pandemia sobre todo) en Enero de este año me decidí y anime a empezar a incursionar en este mundo que tanto me interesa.</p>
-            <img src="./imgAgus.jpg" alt="" width="300px">
-            <!-- le agregue EXCEPCIONALMENTE el widht dentro de la etiqueta HTML para que no se vea tan grande, proximamente la modificaré desde CSS -->
+            <img src="./imgAgus.jpg" alt="imagen Agus">
+            
         </section>
 
-        <section>
-            <h3>Educación</h3>
+        <section class="section sectionEducacion">
+            <h3><i class="fa-solid fa-graduation-cap"></i>Educación</h3>
                 <ul>
                     <li>
                         <h4>Diplomatura en programación web full stack con React JS.</h4>
@@ -34,8 +42,8 @@
                 </ul>
         </section>
 
-        <section>
-            <h3>Contacto</h3>
+        <section class="section sectionContacto">
+            <h3><i class="fa-solid fa-envelope"></i> Contacto</h3>
             <p>Celular: 299 515xxxx</p>
             <p>E-mail: lic.fernandezagustina@gmail.com</p>
             <p>Residencia: Neuquén Capital, Argentina.</p>
