@@ -25,9 +25,19 @@
 
 /* FORMULARIO */
 .form {
-    width: 50vw;
-    margin: 10px auto;
+    width: 100vw;
+    margin: 50px auto;
+    background-color: #ACD9B2;
 
+}
+.form h2 {
+    text-align: center;
+    padding: 20px;
+    color: white;
+}
+.form-floating {
+    width: 40vw;
+    margin: 0px auto;
 }
 
 #floatingInput {
@@ -45,7 +55,10 @@ label {
 }
 
 .btn {
-    margin-top: 20px;
+    display: flex;
+    margin: 20px auto;
+
+    
 }
 
 
