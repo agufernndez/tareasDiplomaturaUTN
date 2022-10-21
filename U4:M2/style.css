@@ -1,0 +1,99 @@
+/* NAV BAR */
+.navbar {
+    padding: 15px;
+    border-bottom: 1px solid lightgray;
+    /* display: flex; */
+    /* align-items: center; */
+}
+
+.imgLogo {
+    width: 150px;
+}
+
+/* CARROUSEL */
+/* COMO HAGO PARA QUE LAS IMAGENES SE AJUSTEN AL TAMAÑO Y QUEDEN DE LA MISMA ALTURA TODAS? */
+.row-carrousel {
+    margin: 20px;
+}
+
+/* PRODUCTOS */
+/* COMO HAGO PARA QUE LAS IMAGENES SE AJUSTEN AL TAMAÑO Y QUEDEN DE LA MISMA ALTURA TODAS? */
+.divCards {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* FORMULARIO */
+.form {
+    width: 50vw;
+    margin: 10px auto;
+
+}
+
+#floatingInput {
+    height: 35px;
+}
+
+#floatingPassword {
+    height: 35px;
+}
+
+label {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+}
+
+.btn {
+    margin-top: 20px;
+}
+
+
+
+/* .containers {
+    height: 60vh;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.container {
+    height: 50px;
+    background-color: #FFB6C1;
+}
+.container-fluid {
+    height: 50px;
+    background-color: #D8BFD8;
+}
+.container-sm {
+    background-color: #FFB6C1;
+    height: 50px;
+}
+.col-6{ 
+    background-color: #FFEFD5;
+}
+
+.col-4{ 
+    background-color: PowderBlue;
+
+}
+.col-2{ 
+    background-color: #FFE4E1;
+
+}
+.container-md {
+    height: 50px;
+    background-color: #FFB6C1;
+}
+.container-lg {
+    height: 50px;
+    background-color: #FFB6C1;
+}
+.container-xl {
+    height: 50px;
+    background-color: #FFB6C1;
+}
+.container-xxl {
+    height: 50px;
+    background-color: #FFB6C1;
+} */
