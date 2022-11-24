@@ -1,0 +1,32 @@
+main {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    gap: 70px;
+}
+div {
+    margin-top: 50px;
+    width: 150px;
+    height: 150px;
+    cursor: pointer;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#divPeachPuff {
+    background-color: #F5CBA7;
+}
+
+#divViolet {
+    background-color: #AF7AC5;
+}
+
+#divAquamarine {
+    background-color: #48C9B0;
+}
+
+p {
+    color: white;
+}
