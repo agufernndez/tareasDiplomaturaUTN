@@ -6,6 +6,7 @@ var logger = require('morgan');
 
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
+// aca sigo poniendo las rutas para el resto de las paginas
 
 var app = express();
 
@@ -21,6 +22,20 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
+// aca sigo haciendo las rutas para las dif paginas
+
+// aca van los get
+app.get("/contactanos", function(req,res){
+  res.send("Bienvenidos! Completa el formulario y en la brevedad nos comunicaremos con vos..")
+})
+
+app.get("/galeria", function(req,res){
+  res.send("Te compartimos las mejores fotos de nuestro restaurat! Esperamos que te gusten tanto como a nosotros..")
+})
+
+app.get("/menu", function(req,res){
+  res.send("Aca vas a poder ver todos nuestros platos!")
+})
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
