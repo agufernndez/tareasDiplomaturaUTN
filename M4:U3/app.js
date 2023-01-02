@@ -4,9 +4,12 @@ var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 
+// ROUTERS ('controladores')
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
-// aca sigo poniendo las rutas para el resto de las paginas
+let contactanosRouter = require ('./routes/contactanos')
+let galeriaRouter = require ('./routes/galeria')
+let menuRouter = require ('./routes/menu')
 
 var app = express();
 
@@ -20,24 +23,29 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
+// USANDO LOS ROUTERS
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
-// aca sigo haciendo las rutas para las dif paginas
+app.use('/contactanos', contactanosRouter);
+app.use('/galeria', galeriaRouter);
+app.use('/menu', menuRouter);
 
-// aca van los get
-app.get("/contactanos", function(req,res){
-  res.send("Bienvenidos! Completa el formulario y en la brevedad nos comunicaremos con vos..")
-})
 
-app.get("/galeria", function(req,res){
-  res.send("Te compartimos las mejores fotos de nuestro restaurat! Esperamos que te gusten tanto como a nosotros..")
-})
 
-app.get("/menu", function(req,res){
-  res.send("Aca vas a poder ver todos nuestros platos!")
-})
+// ROUTING = app.metodo(('path', (req, res) => res.send("mensaje que aparece en la pantalla")});
+// app.get("/contactanos", function(req,res){
+//   res.send("Bienvenidos! Completa el formulario y en la brevedad nos comunicaremos con vos..")
+// })
 
-// catch 404 and forward to error handler
+// app.get("/galeria", function(req,res){
+//   res.send("Te compartimos las mejores fotos de nuestro restaurat! Esperamos que te gusten tanto como a nosotros..")
+// })
+
+// app.get("/menu", function(req,res){
+//   res.send("Aca vas a poder ver todos nuestros platos!")
+// })
+
+// catch 404 and forward to error handlerno
 app.use(function(req, res, next) {
   next(createError(404));
 });
