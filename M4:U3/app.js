@@ -6,7 +6,7 @@ var logger = require('morgan');
 
 // ROUTERS ('controladores')
 var indexRouter = require('./routes/index');
-var usersRouter = require('./routes/users');
+// var usersRouter = require('./routes/users');
 let contactanosRouter = require ('./routes/contactanos')
 let galeriaRouter = require ('./routes/galeria')
 let menuRouter = require ('./routes/menu')
@@ -25,7 +25,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 // USANDO LOS ROUTERS
 app.use('/', indexRouter);
-app.use('/users', usersRouter);
+// app.use('/users', usersRouter);NO LO USAMOS
 app.use('/contactanos', contactanosRouter);
 app.use('/galeria', galeriaRouter);
 app.use('/menu', menuRouter);
