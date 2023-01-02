@@ -1,2 +1,15 @@
 <h1>{{title}}</h1>
-<p>Welcome to {{title}}</p>
+{{#if conocido}}
+<p>Hola {{usuario}}. Ingresaste a tu homebanckin, desde acá podrás realizar todas las operaciones que desees.<br>
+</p>
+<a href="/salir">Cerrar Sesion</a>
+{{/if}}
+
+{{#unless conocido}}
+<p>Bienvenido/a! Para ingresar a su homebanckin, ingrese su usuario: </p>
+<form action="/ingresar" method="post">
+    <input type="text" name="usuario" id="">
+    {{!-- el name tiene que coincidir con las propiedades en res.render, sino NO FUNCIONA!!!! ejemplo: usuario = usuario, nombre = nombre. --}}
+    <button>Ingresar</button>
+</form>
+{{/unless}}
