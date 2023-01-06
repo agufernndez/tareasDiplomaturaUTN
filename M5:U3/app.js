@@ -25,9 +25,9 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
 
-// SELECT de la base de datos
-pool.query('select * from empleados').then(function(resultados) {
-  console.log(resultados)
+// CONSULTAS a la base de datos
+pool.query('select * from empleados').then(function (resultados) {
+  console.log(resultados);
 })
 
 // catch 404 and forward to error handler
