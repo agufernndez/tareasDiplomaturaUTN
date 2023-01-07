@@ -26,9 +26,17 @@ app.use('/', indexRouter);
 app.use('/users', usersRouter);
 
 // CONSULTAS a la base de datos
-pool.query('select * from empleados').then(function (resultados) {
+// SELECT
+pool.query('select nombre, apellido from empleados').then(function (resultados) {
   console.log(resultados);
-})
+});
+
+// UPDATE
+
+// DELETE
+
+
+
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
