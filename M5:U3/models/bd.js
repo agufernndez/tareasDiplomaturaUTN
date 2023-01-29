@@ -3,25 +3,16 @@ let util = require('util');
 
 var pool = mysql.createPool({
     connectionLimit:10,
-    host:process.env.MYSQL_HOST,
-    user:process.env.MYSQL_USER,
-    password:process.env.MYSQL_PASSWORD,
-    database:process.env.MYSQL_DB_NAME
+    host: process.env.MYSQL_HOST,
+    user: process.env.MYSQL_USER,
+    password: process.env.MYSQL_PASSWORD,
+    database: process.env.MYSQL_DB_NAME,
+    // en mac hay que: poner aca port:8889, poner stop en mamp, poner start y npm start.
+    port: 8889
 });
 
 pool.query = util.promisify(pool.query);
 
 module.exports = pool;
 
-
-
-// host:'localhost',
-//     user:'root',
-//     password:'root',
-//     database:'tareaM5:U2'
-
-// MYSQL_HOST=localhost
-// MYSQL_DB_NAME=tareaM5:U2
-// MYSQL_USER=root
-// MYSQL_PASSWORD=root
 
